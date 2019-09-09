@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginVertical="30dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/headerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/text_numero"
+            android:layout_width="286dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="4dp"
+            android:text="escribe numero"
+            android:textAllCaps="true"
+            android:textColor="@color/Negro"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:textAllCaps="false"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/round_button"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginEnd="38dp"
+            android:layout_toStartOf="@+id/button3"
+            android:layout_toEndOf="@+id/button1"
+            android:background="@drawable/round_button"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/round_button"
+            android:text="3" />"
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:textAllCaps="false"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/round_button"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginEnd="38dp"
+            android:layout_toStartOf="@+id/button6"
+            android:layout_toEndOf="@+id/button4"
+            android:background="@drawable/round_button"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/round_button"
+            android:text="6" />"
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:textAllCaps="false"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/round_button"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginEnd="38dp"
+            android:layout_toStartOf="@+id/button9"
+            android:layout_toEndOf="@+id/button7"
+            android:background="@drawable/round_button"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/round_button"
+            android:text="9" />"
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:textAllCaps="false"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonC"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/round_button"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/button0"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginEnd="38dp"
+            android:layout_toEndOf="@+id/buttonC"
+            android:background="@drawable/round_button"
+            android:text="0" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:textAllCaps="false"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="30dp">
+
+        <Button
+            android:id="@+id/llamar"
+            android:layout_width="326dp"
+            android:layout_height="52dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginEnd="18dp"
+            android:background="@color/Rojo"
+            android:text="LLamar"
+            android:textColor="@color/Blanco"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </RelativeLayout>
+
+</LinearLayout>
+    <FrameLayout
+        android:id="@+id/cargarContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#9F000000"
+        android:visibility="gone"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginHorizontal="50dp"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="20dp"
+            >
+
+            <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Llamando..."
+                android:textColor="#000"
+                android:textAlignment="center"
+                android:textSize="50sp"/>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>
